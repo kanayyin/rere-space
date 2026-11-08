@@ -11,7 +11,7 @@ node_modules/
 # Build output
 dist/
 build/
-**/dist/  halo
+**/dist/
 **/build/
 
 # Prisma generated client

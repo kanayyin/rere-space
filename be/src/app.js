@@ -11,7 +11,6 @@ import { dashboardRouter } from './modules/orders/dashboard.routes.js';
 import { errorHandler } from './middleware/error.js';
 
 const app = express();
-const PORT = process.env.PORT || 4000;
 
 app.use(cors({
   origin: process.env.FRONTEND_URL || 'http://localhost:5173',
@@ -33,6 +32,4 @@ app.use('/api/admin/dashboard', dashboardRouter);
 
 app.use(errorHandler);
 
-app.listen(PORT, () => {
-  console.log(`PastelShop backend running on port ${PORT}`);
-});
+export default app;
