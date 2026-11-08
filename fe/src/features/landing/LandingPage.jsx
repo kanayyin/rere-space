@@ -279,7 +279,7 @@ export default function LandingPage() {
             </div>
           ) : (
             <>
-              <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="grid gap-5 grid-cols-3">
                 {displayed.map((p) => (
                   <ProductCard key={p.id} product={p} onSelect={setSelectedProduct} />
                 ))}
