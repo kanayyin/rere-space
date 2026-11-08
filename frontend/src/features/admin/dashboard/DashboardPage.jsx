@@ -39,7 +39,7 @@ export default function DashboardPage() {
 
       {/* Stats grid */}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        <StatCard icon="📋" label="Pesanan Hari Ini" value={data.ordersToday} color="bg-[var(--color-sky-light)]" />
+        <StatCard icon="📋" label="Pesanan Hari Inii" value={data.ordersToday} color="bg-[var(--color-sky-light)]" />
         <StatCard icon="⏳" label="Menunggu Konfirmasi" value={data.pendingOrders} color="bg-[var(--color-peach-light)]" />
         <StatCard icon="💰" label="Pendapatan Bulan Ini" value={formatRupiah(data.revenueThisMonth)} color="bg-[var(--color-mint-light)]" />
         <StatCard icon="📦" label="Modal Bulan Ini" value={formatRupiah(data.costThisMonth)} sub={data.itemsMissingCost > 0 ? `${data.itemsMissingCost} item belum diisi modal` : 'Semua modal terisi'} color="bg-[var(--color-lavender-light)]" />
