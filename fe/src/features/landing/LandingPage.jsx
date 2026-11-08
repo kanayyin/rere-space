@@ -118,45 +118,47 @@ function CategoryPills({ categories, active, onChange }) {
 }
 
 function ProductCard({ product, onSelect }) {
-  const minOpt = product.options?.find((o) => o.isActive);
   return (
     <button
       onClick={() => onSelect(product)}
-      className="group relative flex flex-col overflow-hidden rounded-3xl border border-[var(--color-border)] bg-white text-left shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pop)] hover:-translate-y-1 transition-all duration-200"
+      className="group relative flex flex-col overflow-hidden rounded-2xl sm:rounded-3xl border border-[var(--color-border)] bg-white text-left shadow-[var(--shadow-card)] hover:shadow-[var(--shadow-pop)] hover:-translate-y-1 transition-all duration-200"
     >
       {/* Image */}
       <div className="relative aspect-square w-full overflow-hidden bg-gradient-to-br from-[var(--color-lavender-light)] to-[var(--color-peach-light)]">
         {product.imageUrl ? (
           <img src={product.imageUrl} alt={product.name} className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" />
         ) : (
-          <div className="flex h-full w-full items-center justify-center text-5xl">📦</div>
+          <div className="flex h-full w-full items-center justify-center text-3xl sm:text-5xl">📦</div>
         )}
-        <div className="absolute top-3 left-3">
-          <span className="rounded-full bg-[var(--color-lavender-dark)]/90 backdrop-blur-sm px-3 py-1 text-xs font-bold text-white">
+        <div className="absolute top-1.5 left-1.5 sm:top-3 sm:left-3">
+          <span className="rounded-full bg-[var(--color-lavender-dark)]/90 backdrop-blur-sm px-2 py-0.5 sm:px-3 sm:py-1 text-[10px] sm:text-xs font-bold text-white">
             {product.category}
           </span>
         </div>
         {!product.available && (
           <div className="absolute inset-0 flex items-center justify-center bg-white/60 backdrop-blur-sm">
-            <span className="rounded-full bg-[var(--color-ink)]/80 px-4 py-2 text-xs font-bold text-white">Tidak tersedia</span>
+            <span className="rounded-full bg-[var(--color-ink)]/80 px-3 py-1.5 sm:px-4 sm:py-2 text-[10px] sm:text-xs font-bold text-white">Tidak tersedia</span>
           </div>
         )}
       </div>
 
       {/* Info */}
-      <div className="flex flex-1 flex-col p-4">
-        <h3 className="font-display font-black text-[var(--color-ink)]">{product.name}</h3>
+      <div className="flex flex-1 flex-col p-2.5 sm:p-4 gap-2">
+        <h3 className="font-display font-black text-xs sm:text-base text-[var(--color-ink)] line-clamp-1">
+          {product.name}
+        </h3>
         {product.description && (
-          <p className="mt-1 text-xs text-[var(--color-ink-soft)] line-clamp-2">{product.description}</p>
+          <p className="hidden sm:block text-xs text-[var(--color-ink-soft)] line-clamp-2">{product.description}</p>
         )}
-        <div className="mt-auto pt-3 flex items-center justify-between">
-          <div>
-            <p className="text-xs text-[var(--color-ink-muted)]">Mulai dari</p>
-            <p className="font-display font-black text-[var(--color-lavender-dark)]">
+
+        <div className="mt-auto flex flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between">
+          <div className="min-w-0">
+            <p className="text-[10px] sm:text-xs text-[var(--color-ink-muted)]">Mulai dari</p>
+            <p className="font-display font-black text-xs sm:text-base text-[var(--color-lavender-dark)] truncate">
               {product.minPrice != null ? formatRupiah(product.minPrice) : '-'}
             </p>
           </div>
-          <span className="rounded-full bg-[var(--color-lavender-light)] px-3 py-1 text-xs font-bold text-[var(--color-lavender-dark)]">
+          <span className="shrink-0 w-full sm:w-auto text-center rounded-full bg-[var(--color-lavender-light)] px-3 py-1.5 sm:py-1 text-[10px] sm:text-xs font-bold text-[var(--color-lavender-dark)]">
             Pilih ✦
           </span>
         </div>
@@ -279,7 +281,7 @@ export default function LandingPage() {
             </div>
           ) : (
             <>
-              <div className="grid gap-5 grid-cols-3">
+              <div className="grid gap-1 grid-cols-3 ">
                 {displayed.map((p) => (
                   <ProductCard key={p.id} product={p} onSelect={setSelectedProduct} />
                 ))}
