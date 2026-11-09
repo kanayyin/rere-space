@@ -49,14 +49,23 @@ function HeroSection({ config }) {
         </div>
 
         <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender-light)] px-4 py-1.5 text-sm font-semibold text-[var(--color-ink)]">
-          ⋆˙⟡ Toko digital terpercaya
+          ⋆˙⟡ cek katalog, temukan favoritmu, let the magic begin!
         </div>
 
         <h1 className="font-display text-4xl font-black text-[var(--color-ink)] sm:text-6xl leading-tight">
           {config.storeName} ✦
         </h1>
         <p className="mt-4 text-[var(--color-ink-soft)] text-lg max-w-xl mx-auto">
-          Akun premium digital terbaik dengan harga terjangkau. Proses cepat, garansi ada! 🌸
+          𓂃 ࣪˖ ִֶָ ୨୧ tempat singgah untuk kebutuhan digitalmu
+        </p>
+        <p className=" text-[var(--color-ink-soft)] text-lg max-w-xl mx-auto">
+          ୨ৎ premium access • digital goodies • lovely deals
+        </p>
+        <p className=" text-[var(--color-ink-soft)] text-lg max-w-xl mx-auto">
+          ꒰ა fast response, amanah & happy service ໒꒱
+        </p>
+        <p className=" text-[var(--color-ink-soft)] text-lg max-w-xl mx-auto">
+          ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა order carefully, enjoy endlessly ♡
         </p>
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
@@ -171,7 +180,7 @@ function ProductCard({ product }) {
               {product.minPrice != null ? formatRupiah(product.minPrice) : '-'}
             </p>
           </div>
-          <span className="w-full rounded-full bg-[var(--color-lavender-light)] px-2 py-1 sm:px-3 sm:py-1.5 text-center text-[10px] sm:text-xs font-bold text-[var(--color-lavender-dark)]">
+          <span className="w-full rounded-full bg-[var(--color-lavender-light)] px-2 py-1 sm:px-3 sm:py-1.5 text-center text-[10px] sm:text-xs font-bold text-[var(--color-ink)]">
             Pilih ✦
           </span>
         </div>

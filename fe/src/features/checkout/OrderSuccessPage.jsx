@@ -13,7 +13,7 @@ const STATUS_LABEL = {
 
 function buildWaUrl(order, adminWhatsapp) {
   const lines = [
-    `*✦ Konfirmasi Pesanan — PastelShop*`,
+    `*✦ Konfirmasi Pesanan — Sourire*`,
     `────────────────`,
     `♡  Kode   : ${order.orderCode}`,
     `♡  Nama   : ${order.customerName}`,

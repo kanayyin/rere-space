@@ -32,7 +32,7 @@ export default function AdminLayout() {
       {/* Sidebar */}
       <aside className="hidden w-56 shrink-0 flex-col border-r border-[var(--color-border)] bg-white md:flex">
         <div className="flex items-center gap-2 border-b border-[var(--color-border)] px-5 py-5">
-          <span className="font-display text-lg font-black text-[var(--color-lavender-dark)]">✦ PastelShop</span>
+          <span className="font-display text-lg font-black text-[var(--color-lavender-dark)]">✦ Sourire</span>
         </div>
         <nav className="flex-1 space-y-1 p-3">
           {navItems.map((item) => (
@@ -63,7 +63,7 @@ export default function AdminLayout() {
       <div className="flex flex-1 flex-col min-w-0">
         {/* Mobile topbar */}
         <header className="flex items-center justify-between border-b border-[var(--color-border)] bg-white px-4 py-3 md:hidden">
-          <span className="font-display font-black text-[var(--color-lavender-dark)]">✦ PastelShop</span>
+          <span className="font-display font-black text-[var(--color-lavender-dark)]">✦ Sourire</span>
           <div className="flex gap-2">
             {navItems.map((item) => (
               <NavLink key={item.to} to={item.to} className={({ isActive }) => `rounded-full px-3 py-1.5 text-xs font-bold transition-colors ${isActive ? 'bg-[var(--color-lavender-light)] text-[var(--color-lavender-dark)]' : 'text-[var(--color-ink-soft)] hover:bg-[var(--color-surface-alt)]'}`}>
