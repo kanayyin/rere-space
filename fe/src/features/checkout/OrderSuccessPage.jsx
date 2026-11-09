@@ -27,7 +27,7 @@ function buildWaUrl(order, adminWhatsapp) {
   });
   lines.push(`✦  *Total : ${formatRupiah(order.totalAmount)}*`);
   lines.push('────────────────');
-  lines.push('Mohon konfirmasi stoknya ya kak ♡');
+  lines.push('Mohon konfirmasi pembayarannya ya kak ♡');
   return `https://wa.me/${adminWhatsapp}?text=${encodeURIComponent(lines.join('\n'))}`;
 }
 

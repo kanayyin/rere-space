@@ -3,6 +3,7 @@ import { CartProvider } from './features/cart/CartContext.jsx';
 import { ConfigProvider } from './features/config/ConfigContext.jsx';
 import { ToastProvider } from './components/ui/Toast.jsx';
 import LandingPage from './features/landing/LandingPage.jsx';
+import ProductDetailPage from './features/landing/ProductDetailPage.jsx';
 import CartPage from './features/cart/CartPage.jsx';
 import CheckoutPage from './features/checkout/CheckoutPage.jsx';
 import OrderSuccessPage from './features/checkout/OrderSuccessPage.jsx';
@@ -22,6 +23,7 @@ export default function App() {
             <Routes>
               {/* Public */}
               <Route path="/" element={<LandingPage />} />
+              <Route path="/produk/:slug" element={<ProductDetailPage />} />
               <Route path="/keranjang" element={<CartPage />} />
               <Route path="/checkout" element={<CheckoutPage />} />
               <Route path="/pesanan/:orderCode" element={<OrderSuccessPage />} />
