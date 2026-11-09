@@ -8,26 +8,16 @@ import { useConfig } from '../config/ConfigContext.jsx';
 function NavBar({ cartCount }) {
   const { config } = useConfig();
   return (
-    <nav className="fixed top-0 inset-x-0 z-40 flex items-center justify-between px-4 sm:px-6 py-3 sm:py-4 backdrop-blur-md bg-[var(--color-white-soft)]/80 border-b border-[var(--color-border)]">
-      <span className="font-display text-lg sm:text-xl font-black text-[var(--color-lavender-dark)] truncate">
+    <nav className="fixed top-0 inset-x-0 z-40 flex items-center justify-between px-6 py-4 backdrop-blur-md bg-[var(--color-white-soft)]/80 border-b border-[var(--color-border)]">
+      <span className="font-display text-xl font-black text-[var(--color-lavender-dark)]">
         ✦ {config.storeName}
       </span>
-      <div className="flex items-center gap-2 sm:gap-3">
-        {config.adminWhatsapp && (
-          <a
-            href={`https://wa.me/${config.adminWhatsapp}?text=${encodeURIComponent('Halo kak, saya mau tanya-tanya soal produk ✦')}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-1.5 rounded-full bg-green-500 px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold text-white hover:bg-green-600 transition-colors"
-          >
-            💬 <span className="hidden sm:inline">Chat WA</span>
-          </a>
-        )}
+      <div className="flex items-center gap-3">
         <Link
           to="/keranjang"
-          className="relative flex items-center gap-1.5 sm:gap-2 rounded-full bg-[var(--color-lavender-light)] px-3 sm:px-4 py-2 text-xs sm:text-sm font-semibold text-[var(--color-lavender-dark)] hover:bg-[var(--color-lavender)]/50 transition-colors"
+          className="relative flex items-center gap-2 rounded-full bg-[var(--color-lavender-light)] px-4 py-2 text-sm font-semibold text-[var(--color-ink)] hover:bg-[var(--color-lavender)]/50 transition-colors"
         >
-          🛒 <span className="hidden sm:inline">Keranjang</span>
+          🛒 Keranjang
           {cartCount > 0 && (
             <span className="absolute -top-1.5 -right-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-[var(--color-lavender-dark)] text-xs font-bold text-white">
               {cartCount}
@@ -58,7 +48,7 @@ function HeroSection({ config }) {
           <img src="/profile.jpg" alt={config.storeName} className="h-full w-full object-cover" />
         </div>
 
-        <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender-light)] px-4 py-1.5 text-sm font-semibold text-[var(--color-lavender-dark)]">
+        <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-[var(--color-lavender-light)] px-4 py-1.5 text-sm font-semibold text-[var(--color-ink)]">
           ⋆˙⟡ Toko digital terpercaya
         </div>
 
@@ -222,18 +212,7 @@ function HowToOrder({ config }) {
           ))}
         </div>
 
-        {config.adminWhatsapp && (
-          <div className="mt-8 text-center">
-            <a
-              href={`https://wa.me/${config.adminWhatsapp}?text=${encodeURIComponent('Halo kak, saya mau tanya-tanya soal produk ✦')}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full bg-green-500 px-7 py-3 font-semibold text-white hover:bg-green-600 transition-colors shadow-[var(--shadow-card)]"
-            >
-              💬 Chat Admin WhatsApp
-            </a>
-          </div>
-        )}
+      
       </div>
     </section>
   );
