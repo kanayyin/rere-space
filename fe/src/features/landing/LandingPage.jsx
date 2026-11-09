@@ -55,16 +55,16 @@ function HeroSection({ config }) {
         <h1 className="font-display text-4xl font-black text-[var(--color-ink)] sm:text-6xl leading-tight">
           {config.storeName} ✦
         </h1>
-        <p className="mt-4 text-[var(--color-ink-soft)] text-lg max-w-xl mx-auto">
+        <p className="mt-4 text-[var(--color-ink-soft)] text-sm max-w-xl mx-auto">
           𓂃 ࣪˖ ִֶָ ୨୧ tempat singgah untuk kebutuhan digitalmu
         </p>
-        <p className=" text-[var(--color-ink-soft)] text-lg max-w-xl mx-auto">
+        <p className=" text-[var(--color-ink-soft)] text-sm max-w-xl mx-auto">
           ୨ৎ premium access • digital goodies • lovely deals
         </p>
-        <p className=" text-[var(--color-ink-soft)] text-lg max-w-xl mx-auto">
+        <p className=" text-[var(--color-ink-soft)] text-sm max-w-xl mx-auto">
           ꒰ა fast response, amanah & happy service ໒꒱
         </p>
-        <p className=" text-[var(--color-ink-soft)] text-lg max-w-xl mx-auto">
+        <p className=" text-[var(--color-ink-soft)] text-sm max-w-xl mx-auto">
           ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა order carefully, enjoy endlessly ♡
         </p>
 
