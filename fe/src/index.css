@@ -1,33 +1,47 @@
 @import "tailwindcss";
 
 @theme {
-  --color-lavender: #c9b8ff;
-  --color-lavender-light: #ede8ff;
-  --color-lavender-dark: #a08de0;
-  --color-peach: #ffcba4;
-  --color-peach-light: #fff0e6;
-  --color-peach-dark: #e8a070;
-  --color-mint: #b8f0d8;
-  --color-mint-light: #e8faf2;
-  --color-mint-dark: #6dd4a8;
-  --color-blush: #ffd6e0;
-  --color-blush-light: #fff0f4;
-  --color-blush-dark: #e0829a;
-  --color-sky: #b8e0ff;
-  --color-sky-light: #e8f4ff;
-  --color-white-soft: #fefcff;
-  --color-surface: #f9f6ff;
-  --color-surface-alt: #f3eeff;
-  --color-border: #e8e0f8;
-  --color-ink: #2d2440;
-  --color-ink-soft: #7a6e94;
-  --color-ink-muted: #b0a8c8;
+  /* Main Color (Nama tetap lavender, tapi wujudnya Light Green Pastel) */
+  --color-lavender: #a7f3d0; 
+  --color-lavender-light: #dcfce7;
+  --color-lavender-dark: #34d399;
+  
+  /* Pink Pastel (Menggunakan nama peach) */
+  --color-peach: #fbcfe8;
+  --color-peach-light: #fce7f3;
+  --color-peach-dark: #f472b6;
+  
+  /* Yellow Pastel (Menggunakan nama mint) */
+  --color-mint: #fdf08a;
+  --color-mint-light: #fef9c3;
+  --color-mint-dark: #facc15;
+  
+  /* Soft Peach/Orange (Menggunakan nama blush) */
+  --color-blush: #fed7aa;
+  --color-blush-light: #ffedd5;
+  --color-blush-dark: #fb923c;
+  
+  /* Sky (Soft Blue tetap dipertahankan sebagai aksen pelengkap) */
+  --color-sky: #bae6fd;
+  --color-sky-light: #e0f2fe;
+  
+  /* Surfaces & Backgrounds */
+  --color-white-soft: #fcfdfc;
+  --color-surface: #f4fbf7;
+  --color-surface-alt: #ebf7f0;
+  --color-border: #d1fae5;
+  
+  /* Text / Inks */
+  --color-ink: #1f2937;
+  --color-ink-soft: #4b5563;
+  --color-ink-muted: #9ca3af;
 
   --font-sans: 'Plus Jakarta Sans', sans-serif;
   --font-display: 'Nunito', sans-serif;
 
-  --shadow-card: 0 2px 16px 0 rgba(100, 80, 180, 0.08);
-  --shadow-pop: 0 8px 32px 0 rgba(100, 80, 180, 0.16);
+  /* Shadow (Hijau pastel) */
+  --shadow-card: 0 2px 16px 0 rgba(167, 243, 208, 0.2);
+  --shadow-pop: 0 8px 32px 0 rgba(167, 243, 208, 0.3);
   --radius-pill: 9999px;
 }
 
