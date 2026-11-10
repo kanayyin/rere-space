@@ -5,7 +5,7 @@ export function cn(...classes) {
 const base = 'inline-flex items-center justify-center gap-2 font-semibold transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-lavender)] disabled:opacity-50 disabled:pointer-events-none rounded-full';
 
 const variants = {
-  primary: 'bg-[var(--color-lavender-dark)] text-white hover:bg-[var(--color-lavender-dark)]/90 shadow-[var(--shadow-card)]',
+  primary: 'bg-[var(--color-ink)] text-white hover:bg-[var(--color-lavender-dark)]/90 shadow-[var(--shadow-card)]',
   secondary: 'bg-[var(--color-lavender-light)] text-[var(--color-lavender-dark)] hover:bg-[var(--color-lavender)]/60',
   ghost: 'hover:bg-[var(--color-surface-alt)] text-[var(--color-ink-soft)]',
   danger: 'bg-red-500 text-white hover:bg-red-600',
